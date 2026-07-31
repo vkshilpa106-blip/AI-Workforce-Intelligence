@@ -1,16 +1,15 @@
-🛡️ AI Employee Retention Intelligence System
+**🛡️ AI Employee Retention Intelligence System**
 
 
 Predicting flight-risk employees from workforce data and turning that signal into a targeted retention strategy.
 
 
-📌 Project Overview & Objectives
+**📌 Project Overview & Objectives**
 
 Employee turnover is expensive, disruptive, and mostly invisible until a resignation letter lands. Traditional HR teams are forced to be reactive (conducting exit interviews and managing replacement hiring). This project builds a proactive Machine Learning Pipeline that identifies voluntary attrition risk before it happens.
 
 
-🎯 Key Objectives:Predict & Explain Attrition: 
-
+**🎯 Key Objectives:Predict & Explain Attrition:  **
 Build a highly calibrated classification model optimized for Recall to catch the costly minority (16.1%) of employees who leave.Domain Feature Engineering: Engineer custom indicators reflecting scheduling strain and structural plateaus (Burnout_Index, Career_Stagnation_Index).Interactive Policy Simulator: Turn predictive data into an interactive, enterprise-grade Streamlit Dashboard where HR leadership can simulate policy changes (e.g., overtime caps) and view risk fluctuations in real-time.
 
 
@@ -25,8 +24,7 @@ Left   (Class 1) ──■■■■■■■ 16.1% (237 rows)
 ⚠️ The Accuracy Trap: A baseline model that blindly predicts that every employee stays will score an 84% Accuracy while catching 0% of true flight risks. Therefore, this project completely skips accuracy and optimizes for Recall, Precision, and F1-Score.
 
 
-💡 Key Exploratory Data Analysis (EDA) Findings
-
+**💡 Key Exploratory Data Analysis (EDA) Findings **
 
 Five major behavioral signals separate stayers from leavers:
 
@@ -59,13 +57,10 @@ A proxy tracking structural plateauing using Laplace smoothing to protect agains
 (Years in Role + 1) ÷ (Years at Company + 1)
 
 
-## ⚖️ Ethical Considerations & Limitations
+<img width="434" height="209" alt="image" src="https://github.com/user-attachments/assets/1aa02443-0d10-474b-ab30-d529a1d489db" />
 
-- A risk score must inform **supportive conversations, never punitive ones** — flagging someone as "flight risk" can itself damage trust if mishandled.
-- The model reflects **one company's data (1,470 records)** and may not generalize across industries, tenure structures, or regions.
-- It should **complement**, not replace, manager judgment.
 
-🛠️ Leak-Proof Pipeline:
+**🛠️ Leak-Proof Pipeline:**
 
 Categorical Encoding: OneHotEncoder(drop='if_binary') applied to string variables.
 
@@ -73,7 +68,7 @@ Feature Scaling: StandardScaler() applied to numerical fields.
 
 Feature Selection: Multicollinear variables discovered via bivariate correlation heatmaps (JobLevel, YearsWithCurrManager, YearsInCurrentRole) were programmatically pruned to preserve model interpretability.
 
-🏆 Model Optimization & Selection Leaderboard
+**🏆 Model Optimization & Selection Leaderboard**
 
 An exhaustive model selection sweep evaluated algorithms across multiple distinct families (Linear, Single Tree, Parallel Ensembles, and Sequential Boosting).
 
@@ -87,7 +82,7 @@ An exhaustive model selection sweep evaluated algorithms across multiple distinc
 
  
 
-🔍 Production-Grade Validation
+**🔍 Production-Grade Validation**
 
 The champion Oversampled Logistic Regression model was wrapped inside an imblearn pipeline and verified using a 5-Fold Stratified Cross-Validation loop to isolate resampling strictly within training folds:
 
@@ -96,7 +91,7 @@ Mean CV Catch Rate (Recall): 72.11% ± 0.0
 7Mean CV Alarm Accuracy (Precision): 38.04% ± 0.03
 
 
-🧭 Strategic HR Application: 
+**🧭 Strategic HR Application: **
 
 Choosing a ModelModel choice is a business decision following the cost of a missed flight-risk vs. the cost of an intervention:
 
@@ -104,8 +99,8 @@ High-Coverage Intervention Strategy (Tuned Random Forest / Oversampled LR): Offe
 
 High-Confidence Intervention Strategy (Tuned AdaBoost): Offers 72% Precision. Best when interventions are high-cost (e.g., custom retention bonuses, equity top-ups) and false alarms must be strictly avoided.
 
-
-🚀 Interactive Workforce Intelligence Suite (Streamlit)
+**
+🚀 Interactive Workforce Intelligence Suite (Streamlit)**
 
 The final pipeline is deployed as a web application synced with  HRIS structures.
 
@@ -121,9 +116,9 @@ Live Policy Simulator (Sidebar): Allows HR managers to toggle mandatory overtime
 Link: https://ai-workforce-intelligence-gvarcivc3pjzoc6qdisael.streamlit.app/
 
 Simulated Flight Risk Roster: An interactive table filterable by department, sorting employees by their live predictive risk probabilities with visual progress bars.
-
+**
 📂 Repository Structure
-
+**
 ├── data/
 │   └── WA_Fn-UseC_-HR-Employee-Attrition.csv  # HR Core Dataset
 ├── app.py                                      # Streamlit Web Application Interface
@@ -144,6 +139,12 @@ Simulated Flight Risk Roster: An interactive table filterable by department, sor
 | Recall (5-fold CV) | 72.11% ± 7.2% |
 | Precision (5-fold CV) | 38.0% ± 3.4% |
 | F1 (5-fold CV) | 0.497 ± 0.037 |
+
+## ⚖️ Ethical Considerations & Limitations
+
+- A risk score must inform **supportive conversations, never punitive ones** — flagging someone as "flight risk" can itself damage trust if mishandled.
+- The model reflects **one company's data (1,470 records)** and may not generalize across industries, tenure structures, or regions.
+- It should **complement**, not replace, manager judgment.
 
 ---
 
