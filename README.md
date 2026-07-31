@@ -24,7 +24,7 @@ Left   (Class 1) ──■■■■■■■ 16.1% (237 rows)
 ⚠️ The Accuracy Trap: A baseline model that blindly predicts that every employee stays will score an 84% Accuracy while catching 0% of true flight risks. Therefore, this project completely skips accuracy and optimizes for Recall, Precision, and F1-Score.
 
 
-**💡 Key Exploratory Data Analysis (EDA) Findings **
+##💡 Key Exploratory Data Analysis (EDA) Findings##
 
 Five major behavioral signals separate stayers from leavers:
 
@@ -60,7 +60,7 @@ A proxy tracking structural plateauing using Laplace smoothing to protect agains
 <img width="434" height="209" alt="image" src="https://github.com/user-attachments/assets/1aa02443-0d10-474b-ab30-d529a1d489db" />
 
 
-**🛠️ Leak-Proof Pipeline:**
+##🛠️ Leak-Proof Pipeline:##
 
 Categorical Encoding: OneHotEncoder(drop='if_binary') applied to string variables.
 
@@ -82,7 +82,7 @@ An exhaustive model selection sweep evaluated algorithms across multiple distinc
 
  
 
-**🔍 Production-Grade Validation**
+##🔍 Production-Grade Validation##
 
 The champion Oversampled Logistic Regression model was wrapped inside an imblearn pipeline and verified using a 5-Fold Stratified Cross-Validation loop to isolate resampling strictly within training folds:
 
@@ -91,7 +91,7 @@ Mean CV Catch Rate (Recall): 72.11% ± 0.0
 7Mean CV Alarm Accuracy (Precision): 38.04% ± 0.03
 
 
-**🧭 Strategic HR Application: **
+##🧭 Strategic HR Application: ##
 
 Choosing a ModelModel choice is a business decision following the cost of a missed flight-risk vs. the cost of an intervention:
 
@@ -116,9 +116,9 @@ Live Policy Simulator (Sidebar): Allows HR managers to toggle mandatory overtime
 Link: https://ai-workforce-intelligence-gvarcivc3pjzoc6qdisael.streamlit.app/
 
 Simulated Flight Risk Roster: An interactive table filterable by department, sorting employees by their live predictive risk probabilities with visual progress bars.
-**
-📂 Repository Structure
-**
+
+
+##📂 Repository Structure ##
 ├── data/
 │   └── WA_Fn-UseC_-HR-Employee-Attrition.csv  # HR Core Dataset
 ├── app.py                                      # Streamlit Web Application Interface
