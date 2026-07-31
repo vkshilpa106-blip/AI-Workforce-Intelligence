@@ -18,6 +18,7 @@ Build a highly calibrated classification model optimized for Recall to catch the
 
 
 Stayed (Class 0) ──■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■ 83.9% (1,233 rows)
+
 Left   (Class 1) ──■■■■■■■ 16.1% (237 rows)
 
 
@@ -116,6 +117,8 @@ The final pipeline is deployed as a web application synced with  HRIS structures
 Dynamic KPI Cards: Displays active risk numbers, recall benchmarks, and weighted economic savings calculations based on customized business assumptions.
 
 Live Policy Simulator (Sidebar): Allows HR managers to toggle mandatory overtime caps or sliders for work-life balance improvements to see employee risk scores adjust dynamically.
+
+Link: https://ai-workforce-intelligence-gvarcivc3pjzoc6qdisael.streamlit.app/
 
 Simulated Flight Risk Roster: An interactive table filterable by department, sorting employees by their live predictive risk probabilities with visual progress bars.
 
