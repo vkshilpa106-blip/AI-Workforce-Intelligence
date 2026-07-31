@@ -106,30 +106,8 @@ High-Confidence Intervention Strategy (Tuned AdaBoost): Offers 72% Precision. Be
 
 🚀 Interactive Workforce Intelligence Suite (Streamlit)
 
-The final pipeline is deployed as a web application synced with Workday HRIS structures.
+The final pipeline is deployed as a web application synced with  HRIS structures.
 
-
-+---------------------------------------------------------------------------------------+
-
-| 🛡️ AI WORKFORCE INTELLIGENCE SUITE                                                    |
-| Enterprise Risk Dashboard synced with Workday Schema                                  |
-+---------------------------------------------------------------------------------------+
-
-|  [ KPI 1 ]               [ KPI 2 ]               [ KPI 3 ]               [ KPI 4 ]    |
-| Catch Rate (Recall)   Critical Flight Risks   Estimated Saved Staff   Estimated Savings|
-|      72.11%                  120                    42                 $1,050,000     |
-+---------------------------------------------------------------------------------------+
-
-|  [ SIDEBAR CONTROLS ]        |  [ MAIN DASHBOARD INTERFACE ]                          |
-|                              |                                                        |
-|  Burnout Mitigation          |   📘 System Methodology & Analytics Log               |
-|  [x] Enforce OT Caps         |   +-------------------------------------------------+  |
-|                              |   | Feature Importance   |   Simulated Risk Roster  |  |
-|  Workplace Flexibility       |   |                      |                          |  |
-|  O===o================= 15%   |   | 1. OverTime_Yes      |   ID   Dept   Risk       |  |
-|                              |   | 2. Burnout_Index     |   01   Sales  92.1% [██] |  |
-|  Promotion Accelerator       |   | 3. Stagnation_Index  |   04   R&D    74.5% [██] |  |
-|  O=======o============= 20%   |   +-------------------------------------------------+  |
 +---------------------------------------------------------------------------------------+
 
 
