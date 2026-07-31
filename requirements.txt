@@ -2,4 +2,6 @@ streamlit>=1.36
 pandas>=2.0
 numpy>=1.26
 scikit-learn>=1.4
-Note :streamlit, pandas, scikit-learn, xgboost, seaborn, matplotlib,
+xgboost
+seaborn
+matplotlib
