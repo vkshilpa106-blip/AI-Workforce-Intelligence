@@ -251,5 +251,5 @@ with col_right:
             "EmployeeNumber": "Employee ID",
             "Flight_Risk_%": st.column_config.ProgressColumn("Live Risk Probability", min_value=0, max_value=100, format="%.2f%%")
         },
-        use_container_width=True, hide_index=True
+        width='stretch', hide_index=True
     )
